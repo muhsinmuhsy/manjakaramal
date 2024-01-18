@@ -1,47 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjakaramal</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
 
-        <link rel="stylesheet" href="logo.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+    /* Row styles */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Column styles */
+    .col {
+      box-sizing: border-box; 
+      float: left; 
+    }
+
+    /* logo */
+    @media (min-width: 786px) {
+        .logo-full {
+            padding-left: 105px;
+        }
+
+        .logo {
+            position: relative;
+            width: 100px;
+            height: 100px; 
+            border: solid 7px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 131%;
+            height: 7px;
+            background-color: #fff;
+            top: 64%;
+            left: -14%;
+            transform: translateY(-50%) rotate(-36deg);
+        }
+
+        .brand-name{
+            font-size: 13px;
+        }
+
+        .field-name{
+            font-size: 14px;
+        }
+    }
+
+
+    @media (max-width: 786px) {
+        .logo {
+            position: relative;
+            width: 50px;
+            height: 50px; 
+            border: solid 3px;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+        }
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 130%;
+            height: 3px;
+            background-color: #fff;
+            top: 64%;
+            left: -14%;
+            transform: translateY(-50%) rotate(-36deg);
+        }
+
+        .brand-name{
+            font-size: 6.5px;
+        }
+
+        .field-name{
+            font-size: 7px;
+        }
+    }
+
+    
+    @media (max-width: 300px) {
+        .logo{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: solid 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            width: 130%;
+            height: 3px;
+            background-color: #fff;
+            top: 64%;
+            left: -14%;
+            transform: translateY(-50%) rotate(-36deg);
+        }
+
+        .brand-name{
+            font-size: 5.5px;
+        }
+
+        .field-name{
+            font-size: 6px;
+        }
+   
+    }
+
+    /* menu */
+    @media (min-width: 786px) {
+        .menu {
+            padding-left: 260px;
+            padding-top: 35px;
+        }
+        .menu-item {
+            font-size: 35px;
+        }
+        .menu-item {
+            padding-right: 170px;
+            
+        }
+    }
+
+    @media (max-width: 786px) {
+        .menu{
+            padding-left: 25px;
+            padding-top: 23px;
+        }
+        .menu-item {
+            padding-right: 20px;
+        }
+    }
+
+    @media (max-width: 300px) {
+        .menu{
+            padding-left: 8px;
+            padding-top: 17px;
+        }
+        .menu-item {
+            padding-right: 2px;
+        }
+    }
+
     
     
-    <body class="bg-dark text-light">
+</style>
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="logo-full">
+                <div class="logo"></div>
+                <div class="brand-name">MANJAKARAMAL</div>
+                <div class="field-name">TECHNOLOGIES</div>
+            </div>
+            
+        </div>
+
+        <div class="col">
+            <div class="menu">
+                <span class="menu-item">Home</span>
+                <span class="menu-item">About</span>
+                <span class="menu-item">Services</span>
+                
+                <span class="menu-item">Contact</span>
         
-        <div class="container">
-            <div class="row">
-                <div class="col-3 logo-full">
-                    <div class="logo"></div>
-                    <div class="brand-name">Manjakaramal</div>
-                    <div class="field-name">Technologies</div>
-                </div>
-                <div class="col-9 menu">
-                    
-                    <span class="menu-name">
-                        Home
-                    </span>
-                    <span class="menu-name">
-                        About
-                    </span>
-                    <span class="menu-name">
-                        Services
-                    </span>
-                    <span class="menu-name">
-                        Contact
-                    </span>
-                    
-                </div>
             </div>
         </div>
 
+        
+    </div>
 
+    
 
-        <script src="mine.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+    
+    
+    
+
+    
+</body>
 </html>
