@@ -1,196 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manjakaramal</title>
-</head>
-<style>
-    body {
-        background-color: #000;
-        color: #fff;
-    }
-
-    /* Row styles */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    /* Column styles */
-    .col {
-      box-sizing: border-box; 
-      float: left; 
-    }
-
-    /* logo */
-    @media (min-width: 786px) {
-        .logo-full {
-            padding-left: 105px;
-        }
-
-        .logo {
-            position: relative;
-            width: 100px;
-            height: 100px; 
-            border: solid 7px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        .logo::before {
-            content: "";
-            position: absolute;
-            width: 131%;
-            height: 7px;
-            background-color: #fff;
-            top: 64%;
-            left: -14%;
-            transform: translateY(-50%) rotate(-36deg);
-        }
-
-        .brand-name{
-            font-size: 13px;
-        }
-
-        .field-name{
-            font-size: 14px;
-        }
-    }
-
-
-    @media (max-width: 786px) {
-        .logo {
-            position: relative;
-            width: 50px;
-            height: 50px; 
-            border: solid 3px;
-            border-top-left-radius: 13px;
-            border-top-right-radius: 13px;
-        }
-
-        .logo::before {
-            content: "";
-            position: absolute;
-            width: 130%;
-            height: 3px;
-            background-color: #fff;
-            top: 64%;
-            left: -14%;
-            transform: translateY(-50%) rotate(-36deg);
-        }
-
-        .brand-name{
-            font-size: 6.5px;
-        }
-
-        .field-name{
-            font-size: 7px;
-        }
-    }
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Manjakaramal</title>
+        <!-- bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
     
-    @media (max-width: 300px) {
-        .logo{
-            position: relative;
-            width: 40px;
-            height: 40px;
-            border: solid 3px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .logo::before {
-            content: "";
-            position: absolute;
-            width: 130%;
-            height: 3px;
-            background-color: #fff;
-            top: 64%;
-            left: -14%;
-            transform: translateY(-50%) rotate(-36deg);
-        }
-
-        .brand-name{
-            font-size: 5.5px;
-        }
-
-        .field-name{
-            font-size: 6px;
-        }
-   
-    }
-
-    /* menu */
-    @media (min-width: 786px) {
-        .menu {
-            padding-left: 260px;
-            padding-top: 35px;
-        }
-        .menu-item {
-            font-size: 35px;
-        }
-        .menu-item {
-            padding-right: 170px;
-            
-        }
-    }
-
-    @media (max-width: 786px) {
-        .menu{
-            padding-left: 25px;
-            padding-top: 23px;
-        }
-        .menu-item {
-            padding-right: 20px;
-        }
-    }
-
-    @media (max-width: 300px) {
-        .menu{
-            padding-left: 8px;
-            padding-top: 17px;
-        }
-        .menu-item {
-            padding-right: 2px;
-        }
-    }
-
-    
-    
-</style>
-<body>
-    <div class="row">
-        <div class="col">
-            <div class="logo-full">
-                <div class="logo"></div>
-                <div class="brand-name">MANJAKARAMAL</div>
-                <div class="field-name">TECHNOLOGIES</div>
-            </div>
-            
-        </div>
-
-        <div class="col">
-            <div class="menu">
-                <span class="menu-item">Home</span>
-                <span class="menu-item">About</span>
-                <span class="menu-item">Services</span>
+    <body>
+        <!-- head -->
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logo"></div>
+                    <div class="brand-name">MANJAKARAMAL</div>
+                    <div class="field-name">TECHNOLOGIES</div>
+                </div>
                 
-                <span class="menu-item">Contact</span>
-        
+                <div class="col-9 d-flex justify-content-center">
+                    <span class="menu-item" onclick="showPage('home')">Home</span>
+                    <span class="menu-item" onclick="showPage('about')">About</span>
+                    <span class="menu-item" onclick="showPage('services')">Services</span>
+                    <span class="menu-item" onclick="showPage('contact')">Contact</span>
+                </div>
+
             </div>
         </div>
 
+        <!--home-page-->
+        <div id="home" class="page">
+            <!-- content -->
+            <div class="container content">
+                <div class="div d-flex justify-content-center content-head">
+                    Welcome!..
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center content-icon">
+                        
+                        <i class="bi bi-laptop-fill"></i>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="div text-center content-p pt-2">
+                            This is adynamic and innovative technology company specializing 
+                            in web development, committed to delivering cutting-edge solutions 
+                            that transform businesses. With a passion for pushing the boundaries 
+                            of digital possibilities, we bring creativity, technical expertise, 
+                            and a client-centric approach to every project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- button -->
+            <div class="container d-flex justify-content-center home-button-div">
+                <button class="btn btn-light btn-lg-home" onclick="showPage('about')">
+                    About Us
+                </button>
+            </div>
+        </div>
         
-    </div>
+        <!-- about-page -->
+        <div id="about" class="page" style="display: none;">
+            <div class="container content">
+                <div class="div d-flex justify-content-center content-head">
+                    About Us
+                </div>
+                
+                <div class="div text-center content-p pt-2">
+                    This is adynamic and innovative technology company specializing 
+                    in web development, committed to delivering cutting-edge solutions 
+                    that transform businesses. With a passion for pushing the boundaries 
+                    of digital possibilities, we bring creativity, technical expertise, 
+                    and a client-centric approach to every project.
+                </div>
+                <div class="row boxes">
+                    <div class="col">
+                        <div class="box">
+                            
+                            <i class="bi bi-eye-fill box-icon"></i>
+                            
+                            <div class="box-head">
+                                our mission
+                            </div>
+                            <div class="box-text pb-3">
+                                To empower businesses through innovative and reliable 
+                                technology solutions, delivering unparalleled value and 
+                                fostering growth in a dynamic digital landscape
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <i class="bi bi-vector-pen box-icon"></i>
+                            <div class="box-head">
+                                our vission
+                            </div>
+                            <div class="box-text pb-3">
+                                To empower businesses through innovative and reliable 
+                                technology solutions, delivering unparalleled value and 
+                                fostering growth in a dynamic digital landscape
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <i class="bi bi-suit-diamond-fill box-icon"></i>
+                            <div class="box-head">
+                                our quality
+                            </div>
+                            <div class="box-text pb-3">
+                                To empower businesses through innovative and reliable 
+                                technology solutions, delivering unparalleled value and 
+                                fostering growth in a dynamic digital landscape
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="container d-flex justify-content-center home-button-div">
+                    <button class="btn btn-light btn-lg-home" onclick="showPage('services')">
+                        Our Services
+                    </button>
+                </div>   
+            </div>
+        </div>
 
-    
+        <div id="services" class="page" style="display: none;">
+            services
+        </div>
+        
+        <div id="contact" class="page" style="display: none;">
+            contact
+        </div>
 
-    
-    
-    
+        
 
-    
-</body>
+        <script src="mine.js"></script>
+
+        <!-- bootstrap cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
 </html>
