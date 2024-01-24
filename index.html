@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    
     <body>
         <!-- head -->
         <div class="container pt-3">
@@ -20,28 +19,25 @@
                     <div class="brand-name">MANJAKARAMAL</div>
                     <div class="field-name">TECHNOLOGIES</div>
                 </div>
-                
                 <div class="col-9 d-flex justify-content-center">
                     <span class="menu-item" onclick="showPage('home')">Home</span>
                     <span class="menu-item" onclick="showPage('about')">About</span>
                     <span class="menu-item" onclick="showPage('services')">Services</span>
                     <span class="menu-item" onclick="showPage('contact')">Contact</span>
                 </div>
-
             </div>
         </div>
 
-        <!--home-page-->
-        <div id="home" class="page">
-            <!-- content -->
+        <!-- home-page -->
+        <div id="home" class="page pb-5">
             <div class="container content">
                 <div class="div d-flex justify-content-center content-head">
                     Welcome!..
                 </div>
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center content-icon">
-                        
-                        <i class="bi bi-laptop-fill"></i>
+                    <div class="col-md-6 d-flex justify-content-center ">
+                        <i class="bi bi-laptop-fill content-icon-1"></i>
+                        <i class="bi bi-phone-fill content-icon-2" ></i>
                     </div>
                     <div class="col-md-6 ">
                         <div class="div text-center content-p pt-2">
@@ -54,9 +50,7 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- button -->
-            <div class="container d-flex justify-content-center home-button-div">
+            <div class="container d-flex justify-content-center button-div">
                 <button class="btn btn-light btn-lg-home" onclick="showPage('about')">
                     About Us
                 </button>
@@ -64,12 +58,11 @@
         </div>
         
         <!-- about-page -->
-        <div id="about" class="page" style="display: none;">
+        <div id="about" class="page pb-5" style="display: none;">
             <div class="container content">
                 <div class="div d-flex justify-content-center content-head">
                     About Us
                 </div>
-                
                 <div class="div text-center content-p pt-2">
                     This is adynamic and innovative technology company specializing 
                     in web development, committed to delivering cutting-edge solutions 
@@ -78,11 +71,9 @@
                     and a client-centric approach to every project.
                 </div>
                 <div class="row boxes">
-                    <div class="col">
+                    <div class="col box-col">
                         <div class="box">
-                            
                             <i class="bi bi-eye-fill box-icon"></i>
-                            
                             <div class="box-head">
                                 our mission
                             </div>
@@ -94,7 +85,7 @@
                             
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col box-col">
                         <div class="box">
                             <i class="bi bi-vector-pen box-icon"></i>
                             <div class="box-head">
@@ -108,9 +99,9 @@
                             
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col box-col">
                         <div class="box">
-                            <i class="bi bi-suit-diamond-fill box-icon"></i>
+                            <i class="bi bi-diamond-fill box-icon"></i>
                             <div class="box-head">
                                 our quality
                             </div>
@@ -122,8 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- button -->
-                <div class="container d-flex justify-content-center home-button-div">
+                <div class="container d-flex justify-content-center button-div">
                     <button class="btn btn-light btn-lg-home" onclick="showPage('services')">
                         Our Services
                     </button>
@@ -131,18 +121,158 @@
             </div>
         </div>
 
-        <div id="services" class="page" style="display: none;">
-            services
+        <!-- services-page -->
+        <div id="services" class="page  pb-5" style="display: none;">
+            <div class="container content">
+                <div class="div d-flex justify-content-center content-head">
+                    Our Services
+                </div>
+                <div class="row pt-3">
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 card-col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-bag-check-fill"></i>
+                                </div>
+                                <h5 class="card-title">Ecommerce</h5>
+                                <p class="card-text">Some quick example text to build on the 
+                                    card title and make up the bulk of the card's content
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center button-div">
+                    <button class="btn btn-light btn-lg-home" onclick="showPage('contact')">
+                        Contact Us
+                    </button>
+                </div>   
+            </div>
         </div>
         
-        <div id="contact" class="page" style="display: none;">
-            contact
+        <!-- contact-page -->
+        <div id="contact" class="page pb-5" style="display: none;">
+            <div class="container content">
+                <div class="div d-flex justify-content-center content-head">
+                    Contact Us
+                </div>
+                <div class="text-center pt-2">
+                    <span class="contact-icon">
+                        <i class="bi bi-facebook"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-instagram"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-youtube"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-threads-fill"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-twitter"></i>
+                    </span>
+                    <span class="contact-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </span>
+                </div>
+                <form action="" class="pt-3">
+                    <div class="text-center pb-2">
+                        <h3>Message Us</h3>             
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 pb-2">
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="col-md-6 pb-2">
+                            <input type="text" class="form-control" placeholder="Enter your place" required>
+                        </div>
+                        <div class="col-md-6 pb-2">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-md-6 pb-2">
+                            <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="col-md-12 pb-2">
+                            <textarea class="form-control" placeholder="Enter your message" rows="10"></textarea>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button class="btn btn-light">Send Message</button>
+                        </div>
+                    </div>
+                </form>  
+            </div>
         </div>
-
-        
 
         <script src="mine.js"></script>
-
         <!-- bootstrap cdn -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
