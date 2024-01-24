@@ -3,6 +3,9 @@ body {
     color: #fff;
 }
 
+.fixed-top {
+    background-color: #000;
+}
 .logo {
     position: relative;
     width: 100px;
@@ -110,7 +113,7 @@ body {
 }
 
 .content{
-    padding-top: 2.5rem;
+    padding-top: 13.5rem;
 }
 
 .content-head{
@@ -136,7 +139,7 @@ body {
 
 @media screen and (max-width: 986px) {
         .content{
-        padding-top: 1.5rem;
+        padding-top: 9rem;
     }
     
     .content-head{
@@ -150,7 +153,7 @@ body {
 
     .content-icon-2 {
         font-size: 4rem;
-        padding-top: 105px;
+        padding-top: 101px;
     }
 
     .content-p{
@@ -161,7 +164,7 @@ body {
 
 @media screen and (max-width: 300px) {
     .content{
-        padding-top: 1.5rem;
+        padding-top: 6.2rem;
     }
 
     .content-head{
