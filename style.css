@@ -113,7 +113,7 @@ body {
 }
 
 .content{
-    padding-top: 13.5rem;
+    padding-top: 0.1rem;
 }
 
 .content-head{
@@ -139,7 +139,7 @@ body {
 
 @media screen and (max-width: 986px) {
         .content{
-        padding-top: 9rem;
+        padding-top: 0.1rem;
     }
     
     .content-head{
@@ -164,7 +164,7 @@ body {
 
 @media screen and (max-width: 300px) {
     .content{
-        padding-top: 6.2rem;
+        padding-top: 0.1rem;
     }
 
     .content-head{
@@ -192,7 +192,7 @@ body {
     margin-top: 30px;
 }
 
-.btn-lg-home {
+.btn-lg {
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 7px;
@@ -205,7 +205,7 @@ body {
     .button-div {
         margin-top: 20px;
     }
-    .btn-lg-home {
+    .btn-lg {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 5px;
@@ -376,3 +376,48 @@ textarea::placeholder {
     }
 }
 
+
+/* animation */
+@keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+  
+/* .page {
+    animation: zoomIn 0.5s ease-in-out;
+} */
+  
+.content-head,
+.content-icon-1,
+.content-icon-2,
+.content-p,
+.btn-lg,
+.box,
+.card,
+.contact-icon,
+.contact-mail-phone,
+.message-us-head,
+input,
+textarea,
+.message-us-button {
+    opacity: 0;
+    animation: zoomIn 0.5s ease-in-out forwards;
+}
+  
+.content-icon-1 { animation-delay: 0.5s; }
+.content-icon-2 { animation-delay: 0.5s; }
+.content-p { animation-delay: 0.5s; }
+.box {animation-delay: 1s;}
+.card { animation-delay: 0.5s; }
+.contact-icon { animation-delay: 0.5s; }
+.contact-mail-phone { animation-delay: 0.7s; }
+.message-us-head { animation-delay: 1s; }
+input { animation-delay: 1.5s; }
+textarea { animation-delay: 1.5s; }
+.message-us-button { animation-delay: 1.5s; }

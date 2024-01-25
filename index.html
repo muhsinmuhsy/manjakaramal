@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Manjakaramal</title>
-        <!-- bootstrap cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- bootstrap 5.3.2 -->
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
         <!-- bootstrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- head -->
-        <div class="container pt-3 fixed-top pb-3">
+        <div class="container pt-3 pb-3">
             <div class="row">
                 <div class="col-3">
                     <div class="logo"></div>
@@ -34,7 +34,7 @@
                 <div class="div d-flex justify-content-center content-head">
                     Welcome!..
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-md-6 d-flex justify-content-center ">
                         <i class="bi bi-laptop-fill content-icon-1"></i>
                         <i class="bi bi-phone-fill content-icon-2" ></i>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="container d-flex justify-content-center button-div">
-                <button class="btn btn-light btn-lg-home" onclick="showPage('about')">
+                <button class="btn btn-light btn-lg" onclick="showPage('about')">
                     About Us
                 </button>
             </div>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center button-div">
-                    <button class="btn btn-light btn-lg-home" onclick="showPage('services')">
+                    <button class="btn btn-light btn-lg" onclick="showPage('services')">
                         Our Services
                     </button>
                 </div>   
@@ -208,7 +208,7 @@
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center button-div">
-                    <button class="btn btn-light btn-lg-home" onclick="showPage('contact')">
+                    <button class="btn btn-light btn-lg" onclick="showPage('contact')">
                         Contact Us
                     </button>
                 </div>   
@@ -244,8 +244,23 @@
                         <i class="bi bi-linkedin"></i>
                     </span>
                 </div>
-                <form action="" class="pt-3">
-                    <div class="text-center pb-2">
+                <div class="py-3 text-center contact-mail-phone">
+                    <span>
+                        <h5>
+                            <i class="bi bi-envelope-fill"></i>
+                            : manjakaramal@gmail.com
+                        </h5>
+                        
+                    </span>
+                    <span>
+                        <h5>
+                            <i class="bi bi-telephone-fill"></i>
+                            : +91 9895291631
+                        </h5>
+                    </span>
+                </div>
+                <form action="">
+                    <div class="text-center pb-2 message-us-head">
                         <h3>Message Us</h3>             
                     </div>
                     <div class="row">
@@ -264,7 +279,7 @@
                         <div class="col-md-12 pb-2">
                             <textarea class="form-control" placeholder="Enter your message" rows="10"></textarea>
                         </div>
-                        <div class="col-md-12 d-flex justify-content-end">
+                        <div class="col-md-12 d-flex justify-content-end message-us-button">
                             <button class="btn btn-light">Send Message</button>
                         </div>
                     </div>
@@ -273,7 +288,7 @@
         </div>
 
         <script src="mine.js"></script>
-        <!-- bootstrap cdn -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- bootstrap 5.3.2 -->
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
     </body>
 </html>
