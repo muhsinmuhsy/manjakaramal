@@ -2,6 +2,10 @@
     margin-top: 47px;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .space {
     margin-top: 2rem;
 }
@@ -33,12 +37,20 @@
 
 .underline img {
     position: absolute;
-    top: 40px;
+    top: -17px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 230px; 
 }
 
+.p-space {
+    margin-top: 1rem;
+}
+
+.wo-we-are-text {
+    font-size: 17px;
+    font-weight: 500;
+}
 
 @media screen and (max-width: 767px) {
     .home-item {
@@ -50,7 +62,7 @@
     }
 
     .underline img {
-        top: 27px;
+        top: -15px;
         max-width: 150px; 
     }
 }
