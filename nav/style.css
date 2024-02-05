@@ -128,7 +128,7 @@
 }
 
 .th-mobile-menu {
-  overflow-y: scroll;
+  overflow-y: hidden;
   scrollbar-width: thin;
   max-height: calc(100vh - 200px);
   padding-bottom: 40px;
@@ -144,6 +144,7 @@
 .th-mobile-menu ul li {
   border-bottom: 1px solid #000;
   list-style-type: none;
+  padding: 10px;
 }
 
 .th-mobile-menu ul li li:first-child {
@@ -1370,3 +1371,6 @@
   font-weight: bolder;
 }
 
+.menu-text-mob {
+  font-weight: 600;
+}
