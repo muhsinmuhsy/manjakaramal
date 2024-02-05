@@ -1,4 +1,4 @@
-.logo {
+.logo-black {
     position: relative;
     width: 70px;
     height:70px; 
@@ -8,7 +8,7 @@
     color: #000;
 }
 
-.logo::before {
+.logo-black::before {
     content: "";
     position: absolute;
     width: 131%;
@@ -19,21 +19,21 @@
     transform: translateY(-50%) rotate(-36deg);
 }
 
-.brand-name{
+.brand-name-black{
     padding-top: 5px;
     font-size: 8px;
     color: #000;
     font-weight: 900;
 }
 
-.field-name{
+.field-name-black{
     font-size: 9px;
     color: #000;
     font-weight: 900;
 }
 
 @media screen and (max-width: 986px) {
-    .logo {
+    .logo-black {
         width: 50px;
         height: 50px;
         border: solid 5px;
@@ -41,23 +41,23 @@
         border-top-right-radius: 10px;
     }
 
-    .logo::before {  
+    .logo-black::before {  
         height: 5px;
         
     }
 
-    .brand-name{
+    .brand-name-black{
         padding-top: 4px;
         font-size: 6px;
     }
 
-    .field-name{
+    .field-name-black{
         font-size: 7px;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .logo {
+    .logo-black {
         width: 50px;
         height: 50px;
         border: solid 5px;
@@ -65,21 +65,108 @@
         border-top-right-radius: 10px;
     }
 
-    .logo::before {  
+    .logo-black::before {  
         height: 5px;
         
     }
 
-    .brand-name{
+    .brand-name-black{
         padding-top: 4px;
         font-size: 6px;
     }
 
-    .field-name{
+    .field-name-black{
         font-size: 7px;
     }
 }
 
-.logo-a {
+.logo-black-a {
+    text-decoration: none;
+}
+
+/***** white *****/
+.logo-white {
+    position: relative;
+    width: 70px;
+    height:70px; 
+    border: solid 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+}
+
+.logo-white::before {
+    content: "";
+    position: absolute;
+    width: 131%;
+    height: 5px;
+    background-color: #fff;
+    top: 64%;
+    left: -14%;
+    transform: translateY(-50%) rotate(-36deg);
+}
+
+.brand-name-white{
+    padding-top: 5px;
+    font-size: 8px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.field-name-white{
+    font-size: 9px;
+    color: #fff;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 986px) {
+    .logo-white {
+        width: 50px;
+        height: 50px;
+        border: solid 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .logo-white::before {  
+        height: 5px;
+        
+    }
+
+    .brand-name-white{
+        padding-top: 4px;
+        font-size: 6px;
+    }
+
+    .field-name-white{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo-white {
+        width: 50px;
+        height: 50px;
+        border: solid 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .logo-white::before {  
+        height: 5px;
+        
+    }
+
+    .brand-name-white{
+        padding-top: 4px;
+        font-size: 6px;
+    }
+
+    .field-name-white{
+        font-size: 7px;
+    }
+}
+
+.logo-white-a {
     text-decoration: none;
 }

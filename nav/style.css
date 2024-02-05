@@ -234,7 +234,6 @@
   padding: 0;
   font-size: 24px;
   border: none;
-  background-color: #fff;
   color: #000;
   display: inline-block;
   border-radius: 50%;
@@ -542,6 +541,8 @@
 .header-top,
 .header-links {
   font-family: var(--para-font);
+  background-color: #fff;
+  padding-bottom: 6px;
 }
 
 
@@ -802,7 +803,7 @@
 
 .header-layout4 .social-box .th-social {
   background-color: #fff;
-  padding-top: 6px;
+  padding-top: 5px;
   height: 40px;
 }
 
@@ -1369,8 +1370,28 @@
 
 .menu-text {
   font-weight: bolder;
+  color: #fff;
+  font-size: 20px;
+}
+
+.menu-text-active {
+  background-color: forestgreen;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .menu-text-mob {
   font-weight: 600;
+}
+
+.zoomable-image {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomable-image:active {
+  transform: scale(1.1); 
 }
