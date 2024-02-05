@@ -1,294 +1,133 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Manjakaramal</title>
-        <!-- bootstrap 5.3.2 -->
-        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-        <!-- bootstrap icon -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- head -->
-        <div class="container pt-3 pb-3">
-            <div class="row">
-                <div class="col-3">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manjakaramal</title>
+    <!-- bootstrap 5.3.2 -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav/style.css">
+    <link rel="stylesheet" href="nav/style.scss">
+    <link rel="stylesheet" href="logo/style.css">
+</head>
+
+<body>
+    <!------------------------------------------nav------------------------------------------->
+    <header class="th-header header-layout4">
+        <div class="header-top">
+            <div class="container">
+                <div class="social-box">
+                    <div class="th-social text-end">
+                        <a target="_blank" href="#"><i class="bi bi-facebook" style="color: blue;"></i></a>
+                        <a target="_blank" href="#"><i class="bi bi-whatsapp" style="color: green;"></i></a>
+                        <a target="_blank" href="#"><i class="bi bi-instagram" style="color: red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo">
+                                    <a href="index.html" class="logo-a">
+                                        <div class="logo"></div>
+                                        <div class="brand-name">MANJAKARAMAL</div>
+                                        <div class="field-name">TECHNOLOGIES</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu d-none d-lg-inline-block">
+                                    <ul>
+                                        <li class="menu-text">
+                                            Home
+
+                                        </li>
+                                        <li class="menu-text">
+                                            About</a>
+                                        </li>
+                                        <li class="menu-text">
+                                            Services</a>
+
+                                        </li>
+                                        <li class="menu-text">
+                                            Projects</a>
+
+                                        </li>
+
+                                        <li class="menu-text">
+                                            Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                               
+
+                                <img src="nav/menu-icon-3.jpg" alt="nav-icon" srcset="" class="th-menu-toggle d-inline-block d-lg-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!----------Mobile Menu-------------->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <img src="nav/close-icon-1.gif" alt="" srcset="" class="th-menu-toggle">
+            <div class="mobile-logo">
+                <a href="index.html" class="logo-a d-flex justify-content-center">
                     <div class="logo"></div>
-                    <div class="brand-name">MANJAKARAMAL</div>
-                    <div class="field-name">TECHNOLOGIES</div>
-                </div>
-                <div class="col-9 d-flex justify-content-center">
-                    <span class="menu-item" onclick="showPage('home')">Home</span>
-                    <span class="menu-item" onclick="showPage('about')">About</span>
-                    <span class="menu-item" onclick="showPage('services')">Services</span>
-                    <span class="menu-item" onclick="showPage('contact')">Contact</span>
-                </div>
+                </a>
+                <div class="brand-name">MANJAKARAMAL</div>
+                <div class="field-name">TECHNOLOGIES</div>
             </div>
-        </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li>
+                        <img src="nav/hand-pont-1.png" alt=""  class="hand-point">
+                        Home
+                    </li>
+                    <li>
+                        <img src="nav/hand-pont-1.png" alt="" class="hand-point">
+                        About
+                    </li>
+                    <li>
+                        <img src="nav/hand-pont-1.png" alt="" class="hand-point">
+                        Services
 
-        <!-- home-page -->
-        <div id="home" class="page pb-5">
-            <div class="container content">
-                <div class="div d-flex justify-content-center content-head">
-                    Welcome!..
-                </div>
-                <div class="row pt-3">
-                    <div class="col-md-6 d-flex justify-content-center ">
-                        <i class="bi bi-laptop-fill content-icon-1"></i>
-                        <i class="bi bi-phone-fill content-icon-2" ></i>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="div text-center content-p pt-2">
-                            This is adynamic and innovative technology company specializing 
-                            in web development, committed to delivering cutting-edge solutions 
-                            that transform businesses. With a passion for pushing the boundaries 
-                            of digital possibilities, we bring creativity, technical expertise, 
-                            and a client-centric approach to every project.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container d-flex justify-content-center button-div">
-                <button class="btn btn-light btn-lg" onclick="showPage('about')">
-                    About Us
-                </button>
-            </div>
-        </div>
-        
-        <!-- about-page -->
-        <div id="about" class="page pb-5" style="display: none;">
-            <div class="container content">
-                <div class="div d-flex justify-content-center content-head">
-                    About Us
-                </div>
-                <div class="div text-center content-p pt-2">
-                    This is adynamic and innovative technology company specializing 
-                    in web development, committed to delivering cutting-edge solutions 
-                    that transform businesses. With a passion for pushing the boundaries 
-                    of digital possibilities, we bring creativity, technical expertise, 
-                    and a client-centric approach to every project.
-                </div>
-                <div class="row boxes">
-                    <div class="col box-col">
-                        <div class="box">
-                            <i class="bi bi-eye-fill box-icon"></i>
-                            <div class="box-head">
-                                our mission
-                            </div>
-                            <div class="box-text pb-3">
-                                To empower businesses through innovative and reliable 
-                                technology solutions, delivering unparalleled value and 
-                                fostering growth in a dynamic digital landscape
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col box-col">
-                        <div class="box">
-                            <i class="bi bi-vector-pen box-icon"></i>
-                            <div class="box-head">
-                                our vission
-                            </div>
-                            <div class="box-text pb-3">
-                                To empower businesses through innovative and reliable 
-                                technology solutions, delivering unparalleled value and 
-                                fostering growth in a dynamic digital landscape
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col box-col">
-                        <div class="box">
-                            <i class="bi bi-diamond-fill box-icon"></i>
-                            <div class="box-head">
-                                our quality
-                            </div>
-                            <div class="box-text pb-3">
-                                To empower businesses through innovative and reliable 
-                                technology solutions, delivering unparalleled value and 
-                                fostering growth in a dynamic digital landscape
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container d-flex justify-content-center button-div">
-                    <button class="btn btn-light btn-lg" onclick="showPage('services')">
-                        Our Services
-                    </button>
-                </div>   
-            </div>
-        </div>
+                    </li>
+                    <li>
+                        <img src="nav/hand-pont-1.png" alt="" class="hand-point">
+                        Projects
+                    </li>
 
-        <!-- services-page -->
-        <div id="services" class="page  pb-5" style="display: none;">
-            <div class="container content">
-                <div class="div d-flex justify-content-center content-head">
-                    Our Services
-                </div>
-                <div class="row pt-3">
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-6 card-col">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <div class="card-icon">
-                                    <i class="bi bi-bag-check-fill"></i>
-                                </div>
-                                <h5 class="card-title">Ecommerce</h5>
-                                <p class="card-text">Some quick example text to build on the 
-                                    card title and make up the bulk of the card's content
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="container d-flex justify-content-center button-div">
-                    <button class="btn btn-light btn-lg" onclick="showPage('contact')">
-                        Contact Us
-                    </button>
-                </div>   
+                    <li>
+                        <img src="nav/hand-pont-1.png" alt="" class="hand-point">
+                        Contact
+                    </li>
+                </ul>
             </div>
         </div>
-        
-        <!-- contact-page -->
-        <div id="contact" class="page pb-5" style="display: none;">
-            <div class="container content">
-                <div class="div d-flex justify-content-center content-head">
-                    Contact Us
-                </div>
-                <div class="text-center pt-2">
-                    <span class="contact-icon">
-                        <i class="bi bi-facebook"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-whatsapp"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-instagram"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-youtube"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-threads-fill"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-twitter"></i>
-                    </span>
-                    <span class="contact-icon">
-                        <i class="bi bi-linkedin"></i>
-                    </span>
-                </div>
-                <div class="py-3 text-center contact-mail-phone">
-                    <span>
-                        <h5>
-                            <i class="bi bi-envelope-fill"></i>
-                            : manjakaramal@gmail.com
-                        </h5>
-                        
-                    </span>
-                    <span>
-                        <h5>
-                            <i class="bi bi-telephone-fill"></i>
-                            : +91 9895291631
-                        </h5>
-                    </span>
-                </div>
-                <form action="">
-                    <div class="text-center pb-2 message-us-head">
-                        <h3>Message Us</h3>             
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 pb-2">
-                            <input type="text" class="form-control" placeholder="Enter your name" required>
-                        </div>
-                        <div class="col-md-6 pb-2">
-                            <input type="text" class="form-control" placeholder="Enter your place" required>
-                        </div>
-                        <div class="col-md-6 pb-2">
-                            <input type="email" class="form-control" placeholder="Enter your email" required>
-                        </div>
-                        <div class="col-md-6 pb-2">
-                            <input type="text" class="form-control" placeholder="Enter your phone number" required>
-                        </div>
-                        <div class="col-md-12 pb-2">
-                            <textarea class="form-control" placeholder="Enter your message" rows="10"></textarea>
-                        </div>
-                        <div class="col-md-12 d-flex justify-content-end message-us-button">
-                            <button class="btn btn-light">Send Message</button>
-                        </div>
-                    </div>
-                </form>  
-            </div>
-        </div>
+    </div>
+    <!------------------------------------------end nav------------------------------------------->
 
-        <script src="mine.js"></script>
-        <!-- bootstrap 5.3.2 -->
-        <script src="bootstrap/bootstrap.bundle.min.js"></script>
-    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="nav/mine.js"></script>
+    <script src="mine.js"></script>
+    <!-- bootstrap 5.3.2 -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
