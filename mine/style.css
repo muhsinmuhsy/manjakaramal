@@ -14,7 +14,13 @@
 }
 .welcome img {
     width: 100%;
-    max-width: 45rem;
+    max-width: 35rem;
+}
+
+@media screen and (max-width: 767px) {
+    .welcome img {
+        max-width: 20rem;
+    }
 }
 
 .home-item {
