@@ -1380,6 +1380,16 @@
   padding-left: 10px;
   padding-bottom: 7px;
   padding-top: 7px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-header.active {
+    top: -15px; 
+    height: 6.5rem;
+  }
 }
 
 .menu-text-mob {
@@ -1396,3 +1406,32 @@
 .zoomable-image:active {
   transform: scale(1.1); 
 }
+
+
+
+.sticky-header.active {
+  position: fixed;
+  top: -40px; 
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  height: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-header.active {
+    top: -15px; 
+    height: 6.1rem;
+  }
+}
+
+.menu-text.active {
+  color: #000;
+}
+
+
+
+
+
+

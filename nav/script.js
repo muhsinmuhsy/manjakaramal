@@ -90,3 +90,47 @@
     $(".th-menu-wrapper").thmobilemenu();
 
 })(jQuery);
+
+
+window.addEventListener('scroll', function () {
+    var header = document.querySelector('.sticky-header');
+    var menuItems = document.querySelectorAll('.menu-text');
+    var logo = document.querySelector('.logo');
+    var brandname = document.querySelector('.brand-name');
+    var fieldName = document.querySelector('.field-name');
+
+    if (window.scrollY > 500) {
+        header.classList.add('active');
+
+        menuItems.forEach(function(item) {
+            item.classList.add('active');
+        });
+
+        logo.classList.remove('logo-white');
+        logo.classList.add('logo-black');
+
+        brandname.classList.remove('brand-name-white');
+        brandname.classList.add('brand-name-black');
+
+        fieldName.classList.remove('field-name-white');
+        fieldName.classList.add('field-name-black');
+    } else {
+        header.classList.remove('active');
+
+        menuItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        logo.classList.remove('logo-black');
+        logo.classList.add('logo-white');
+
+        brandname.classList.remove('brand-name-black');
+        brandname.classList.add('brand-name-white');
+
+        fieldName.classList.remove('field-name-black');
+        fieldName.classList.add('field-name-white');
+    }
+});
+
+
+
