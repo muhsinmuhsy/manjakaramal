@@ -53,9 +53,13 @@
     margin-top: 1rem;
 }
 
-.who-we-are {
-    margin-top: 3rem;
+.who-we-are-img {
+    background-color: #00afec;
 }
+
+/* .who-we-are {
+    margin-top: 3rem;
+} */
 
 .wo-we-are-text {
     font-size: 17px;
@@ -77,3 +81,85 @@
     }
 }
 
+.hand-up img {
+    max-width: 120px;
+}
+
+.aboutus-btn {
+    position: relative;
+    text-align: center;
+}
+
+.aboutus-btn button {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 230px; 
+}
+
+.mt-04 {
+    margin-top: 4rem !important;
+}
+
+.text-fb3c1d {
+    color: #5d9bd9;
+    font-weight: 700;
+}
+
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: 900;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(45deg,   #28a745 , #007bff );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 30s linear infinite; 
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 50px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
