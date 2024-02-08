@@ -176,3 +176,7 @@
     -webkit-text-stroke: 0.75px #000;
     color: transparent;
   }
+
+  .bg-f0f0f0 {
+    background-color: #f0f0f0;
+  }
