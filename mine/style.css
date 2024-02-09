@@ -193,3 +193,32 @@
 .btn.clicked {
     transform: scale(1.1);
 }
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Add background color (optional) */
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #preloader img {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px;
+    animation: spin 2s linear infinite; /* Add animation if desired */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

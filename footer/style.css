@@ -1,0 +1,278 @@
+
+
+/* Footer 3 ---------------------------------- */
+.footer-menu {
+  margin-bottom: 20px;
+}
+
+.footer-menu ul {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.footer-menu li {
+  display: inline-block;
+}
+
+.footer-menu li a {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-menu li a:hover {
+  color: #228b22;
+}
+
+.footer-info2 {
+  color: #000;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+}
+
+.footer-info2 a {
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-info2 a:hover {
+  color: blue;
+}
+
+.footer-layout3 {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.footer-layout3 .widget-area {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-layout3 .copyright-wrap {
+  background-color: #fff;
+}
+
+.footer-layout3 .copyright-text {
+  font-family: var(--para-font);
+}
+
+.footer-layout3 .copyright-wrap a {
+    text-decoration: none;
+  }
+
+.footer-layout3 .footer-menu {
+  padding: 15px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.footer-layout3 .footer-menu > ul {
+  margin-bottom: 0;
+}
+
+/* Large devices */
+@media (max-width: 1199px) {
+  .footer-menu ul {
+    gap: 15px 28px;
+  }
+  .footer-menu li a {
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Medium devices */
+@media (max-width: 991px) {
+  .footer-layout3 {
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .footer-layout3 .widget-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+.footer-menu-active {
+    color: #228b22 !important;
+}
+/*------------------- 4.4. Breadcumb  -------------------*/
+.breadcumb-menu {
+  max-width: 100%;
+  padding: 0;
+  margin: 25px 0 -0.4em 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.breadcumb-menu li {
+  display: inline-block;
+  margin-right: 3px;
+  padding-right: 5px;
+  list-style: none;
+  position: relative;
+}
+
+.breadcumb-menu li:after {
+  content: '\f054';
+  position: relative;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: skyblue;
+  font-family: var(--icon-font);
+}
+
+.breadcumb-menu li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.breadcumb-menu li:last-child:after {
+  display: none;
+}
+
+.breadcumb-menu li,
+.breadcumb-menu a,
+.breadcumb-menu span {
+  white-space: normal;
+  color: inherit;
+  word-break: break-word;
+  font-weight: 400;
+  font-size: 20px;
+  color: skyblue;
+}
+
+.breadcumb-title {
+  color: skyblue;
+  margin: -0.22em 0 -0.12em 0;
+}
+
+.breadcumb-wrapper {
+  background-color: pink;
+  padding: 315px 0 270px 0;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 100px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Medium Large devices */
+@media (max-width: 1399px) {
+  .breadcumb-wrapper {
+    margin-top: 70px;
+    padding: 235px 0 200px 0;
+  }
+}
+
+/* Large devices */
+@media (max-width: 1199px) {
+  .breadcumb-wrapper {
+    padding: 190px 0 160px 0;
+  }
+}
+
+/* Medium devices */
+@media (max-width: 991px) {
+  .breadcumb-wrapper {
+    padding: 150px 0 120px 0;
+  }
+  .breadcumb-menu {
+    margin: 16px 0 -0.5em 0;
+  }
+  .breadcumb-menu li,
+  .breadcumb-menu a,
+  .breadcumb-menu span {
+    font-size: 16px;
+  }
+}
+
+/*------------------- 4.5. Pagination  -------------------*/
+.th-pagination {
+  margin-bottom: 30px;
+}
+
+.th-pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+.th-pagination li {
+  display: inline-block;
+  margin: 0 3px;
+  list-style-type: none;
+}
+
+.th-pagination li:last-child {
+  margin-right: 0;
+}
+
+.th-pagination li:first-child {
+  margin-left: 0;
+}
+
+.th-pagination span,
+.th-pagination a {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border: none;
+  color: brown;
+  background-color: yellow;
+  font-family: var(--title-font);
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.th-pagination span.active, .th-pagination span:hover,
+.th-pagination a.active,
+.th-pagination a:hover {
+  color: skyblue;
+  background-color: red;
+  box-shadow: none;
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+  .th-pagination span,
+  .th-pagination a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+}
