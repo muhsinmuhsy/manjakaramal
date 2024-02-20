@@ -418,12 +418,11 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 7px;
-  padding-top: 6px;
+  padding-top: 7px;
   color: #fff;
   font-weight: bolder;
   font-size: 20px;
 }
-
 
 @media screen and (max-width: 767px) {
   .sticky-header.active {
