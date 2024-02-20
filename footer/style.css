@@ -32,6 +32,7 @@
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .footer-menu li a:hover {
@@ -63,38 +64,38 @@
 }
 
 .footer-info2 a:hover {
-  color: blue;
+  color: #;
 }
 
-.footer-layout3 {
+.footer-layout {
   text-align: center;
   background-color: #f0f0f0;
 }
 
-.footer-layout3 .widget-area {
+.footer-layout .widget-area {
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
-.footer-layout3 .copyright-wrap {
+.footer-layout .copyright-wrap {
   background-color: #fff;
 }
 
-.footer-layout3 .copyright-text {
+.footer-layout .copyright-text {
   font-family: var(--para-font);
 }
 
-.footer-layout3 .copyright-wrap a {
+.footer-layout .copyright-wrap a {
     text-decoration: none;
   }
 
-.footer-layout3 .footer-menu {
+.footer-layout .footer-menu {
   padding: 15px 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
-.footer-layout3 .footer-menu > ul {
+.footer-layout .footer-menu > ul {
   margin-bottom: 0;
 }
 
@@ -110,11 +111,11 @@
 
 /* Medium devices */
 @media (max-width: 991px) {
-  .footer-layout3 {
+  .footer-layout {
     text-align: center;
     background-color: #f0f0f0;
   }
-  .footer-layout3 .widget-area {
+  .footer-layout .widget-area {
     padding-top: 30px;
     padding-bottom: 30px;
   }
