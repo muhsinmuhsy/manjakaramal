@@ -1,60 +1,62 @@
 .carousel {
-    margin-top: 47px;
+  margin-top: 47px;
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .space {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
+
 .welcome {
-    text-align: center;
+  text-align: center;
 }
+
 .welcome img {
-    width: 100%;
-    max-width: 35rem;
+  width: 100%;
+  max-width: 35rem;
 }
 
 @media screen and (max-width: 767px) {
-    .welcome img {
-        max-width: 20rem;
-    }
+  .welcome img {
+    max-width: 20rem;
+  }
 }
 
 .home-item {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .home-item h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .home-item h1 span {
-    font-weight: 900;
-    color: #00afec;
+  font-weight: 900;
+  color: #00afec;
 }
 
 .underline {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .underline img {
-    position: absolute;
-    top: -17px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 230px; 
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 230px;
 }
 
 .p-space {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .who-we-are-img {
-    background-color: #00afec;
+  background-color: #00afec;
 }
 
 /* .who-we-are {
@@ -62,163 +64,174 @@
 } */
 
 .wo-we-are-text {
-    font-size: 17px;
-    font-weight: 500;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
-    .home-item {
-        margin-top: 1rem;
-    }
+  .home-item {
+    margin-top: 1rem;
+  }
 
-    .home-item h1 {
-        margin-top: 10px;
-    }
+  .home-item h1 {
+    margin-top: 10px;
+  }
 
-    .underline img {
-        top: -15px;
-        max-width: 150px; 
-    }
+  .underline img {
+    top: -15px;
+    max-width: 150px;
+  }
 }
 
 .hand-up img {
-    max-width: 120px;
+  max-width: 120px;
 }
 
 .aboutus-btn {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .aboutus-btn button {
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 230px; 
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 230px;
 }
 
 .mt-04 {
-    margin-top: 4rem !important;
+  margin-top: 4rem !important;
 }
 
 .text-fb3c1d {
-    color: #5d9bd9;
-    font-weight: 700;
+  color: #5d9bd9;
+  font-weight: 700;
 }
 
 
 .button-85 {
-    padding: 0.6em 2em;
-    border: none;
-    outline: none;
-    color: rgb(255, 255, 255);
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 50px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    font-weight: 900;
-  }
-  
-  .button-85:before {
-    content: "";
-    background: linear-gradient(45deg,   #28a745 , #007bff, yellow );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing-button-85 30s linear infinite; 
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 50px;
-  }
-  
-  @keyframes glowing-button-85 {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  
-  .button-85:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-  
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-weight: 900;
+}
 
-  .text-228b22 {
-    color: #228b22 !important;
+.button-85:before {
+  content: "";
+  background: linear-gradient(45deg, #28a745, #007bff, yellow);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 30s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
   }
 
-  .mb-7 {
-    margin-bottom: -7px;
+  50% {
+    background-position: 400% 0;
   }
 
-  .text-transparent {
-    -webkit-text-stroke: 0.75px #000;
-    color: transparent;
+  100% {
+    background-position: 0 0;
   }
+}
 
-  .bg-f0f0f0 {
-    background-color: #f0f0f0;
-  }
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
 
 
-  .btn {
-    transition: transform 0.3s ease;
+.text-228b22 {
+  color: #228b22 !important;
+}
+
+.mb-7 {
+  margin-bottom: -7px;
+}
+
+.text-transparent {
+  -webkit-text-stroke: 0.75px #000;
+  color: transparent;
+}
+
+.bg-f0f0f0 {
+  background-color: #f0f0f0;
+}
+
+
+.btn {
+  transition: transform 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btn.clicked {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* Add background color (optional) */
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  /* Add background color (optional) */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader img {
+  animation: spin 2s linear infinite;
+  /* Add animation if desired */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  #preloader img {
-    width: 100px; /* Adjust image size as needed */
-    height: 100px;
-    animation: spin 2s linear infinite; /* Add animation if desired */
+
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
+
+
+.bg-4eca5c {
+  background-color: #4eca5c;
+}
+
+.text-fff {
+  color: #fff;
+}
