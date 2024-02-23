@@ -412,16 +412,21 @@
   font-size: 20px;
 }
 
-.menu-text-active {
+.menu-text.active {
   background-color: #228b22;
   border-radius: 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 7px;
   padding-top: 7px;
-  color: #fff;
+  color: #fff !important;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.menu-text:hover {
+  color: #228b22 !important;
+  background: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -433,6 +438,10 @@
 
 .menu-text-mob {
   font-weight: 600;
+}
+
+.menu-text-mob.active {
+  color: #228b22;
 }
 
 .zoomable-image {
@@ -465,7 +474,7 @@
   }
 }
 
-.menu-text.active {
+.menu-text.black {
   color: #000;
 }
 

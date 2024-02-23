@@ -103,7 +103,7 @@ window.addEventListener('scroll', function () {
         header.classList.add('active');
 
         menuItems.forEach(function(item) {
-            item.classList.add('active');
+            item.classList.add('black');
         });
 
         logo.classList.remove('logo-white');
@@ -118,7 +118,7 @@ window.addEventListener('scroll', function () {
         header.classList.remove('active');
 
         menuItems.forEach(function(item) {
-            item.classList.remove('active');
+            item.classList.remove('black');
         });
 
         logo.classList.remove('logo-black');
