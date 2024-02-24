@@ -32,6 +32,22 @@
     font-weight: 900;
 }
 
+.logo-black:hover {
+    color: #fff;
+}
+
+.logo-black:hover::before {
+    background-color: #fff;
+}
+
+.brand-name-black:hover {
+    color: #fff;
+}
+
+.field-name-black:hover {
+    color: #fff;
+}
+
 @media screen and (max-width: 986px) {
     .logo-black {
         width: 50px;
@@ -113,11 +129,30 @@
     font-weight: 900;
 }
 
+
 .field-name-white{
     font-size: 9px;
     color: #fff;
     font-weight: 900;
 }
+
+
+.logo-white:hover {
+    color: #000;
+}
+
+.logo-white:hover::before {
+    background-color: #000;
+}
+
+.brand-name-white:hover {
+    color: #000;
+}
+
+.field-name-white:hover {
+    color: #000;
+}
+
 
 @media screen and (max-width: 986px) {
     .logo-white {
